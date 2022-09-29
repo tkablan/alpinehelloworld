@@ -55,7 +55,7 @@ pipeline {
      stage ('Login and Push Image on docker hub') {
           agent any
           environment {
-           DOCKERHUB_PASSWORD  = credentials('dockerhub')
+           DOCKERHUB_PASSWORD  = credentials('ba820454-f80c-449a-a484-603c7f2c4e27')
           }  
           steps {
              script {
@@ -95,7 +95,7 @@ pipeline {
             }
       agent any
       environment {
-          HEROKU_API_KEY = credentials('867ff9cc-4858-4f32-bbd2-019b036c09e3')
+          HEROKU_API_KEY = credentials('heroku_api_key')
       }  
       steps {
           script {
